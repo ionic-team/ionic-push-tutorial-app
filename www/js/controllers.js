@@ -32,7 +32,7 @@ angular.module('starter.controllers', [])
     });
   };
 
-  // Registers a device for push notifications and stores its token
+  // Registers a device for push notifications 
   $scope.pushRegister = function() {
     console.log('Ionic Push: Registering user');
 
