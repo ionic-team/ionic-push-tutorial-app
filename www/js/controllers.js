@@ -1,6 +1,13 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, $ionicUser) {
+.controller('DashCtrl', function($scope, $rootScope, $ionicUser) {
+
+  // Handles incoming device tokens
+  $rootScope.$on('$cordovaPush:tokenReceived', function(event, data) {
+    alert("Successfully registered token " + data.token);
+    console.log('Ionic Push: Got token ', data.token, data.platform);
+    $scope.token = data.token;
+  });
 
   // Identifies a user with the Ionic User service
   $scope.identifyUser = function() {
