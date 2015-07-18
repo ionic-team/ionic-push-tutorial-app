@@ -20,7 +20,10 @@ angular.module('starter', [
     // The App ID (from apps.ionic.io) for the server
     app_id: 'YOUR_APP_ID',
     // The public API key all services will use for this app
-    api_key: 'YOUR_PUBLIC_API_KEY'
+    api_key: 'YOUR_PUBLIC_API_KEY',
+    // FOR ANDROID: The GCM project id (usually a number)
+    //https://console.developers.google.com/project/<YOUR_GCM_PROJECT_ID>
+    gcm_id: 'YOUR_GCM_PROJECT_ID'
   });
 }])
 
