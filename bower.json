@@ -3,8 +3,7 @@
   "private": "true",
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.0.1",
-    "ngCordova": "~0.1.17-alpha",
-    "ionic-service-core": "~0.1.8",
-    "ionic-service-push": "~0.1.11"
+    "ionic-platform-web-client": "~0.2.1",
+    "ngCordova": "~0.1.17-alpha"
   }
 }
